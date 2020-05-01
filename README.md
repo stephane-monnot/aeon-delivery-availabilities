@@ -1,4 +1,4 @@
-# Check if delivery available Aeon
+# Check if delivery available on Aeon
 
 ```shell
 SLACK_WEBHOOK_URL="https://hooks.slack.com/services/XXXXXX" AEON_USER="MyId" AEON_PWD="MyPassword" node index.js
