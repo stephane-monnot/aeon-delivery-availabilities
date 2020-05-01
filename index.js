@@ -36,9 +36,6 @@ const screenshot = 'aeon.png';
       });
       console.log('available');
     } else {
-      await webhook.send({
-        text: 'Aeon test',
-      });
       console.log('unavailable');
     }
 
