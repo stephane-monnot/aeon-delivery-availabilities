@@ -29,17 +29,16 @@ const screenshot = 'aeon.png';
       return tds.map(td => td.innerText);
     });
 
-    if (deliveryText.some(text => text !== '✕')) {
+    if (deliveryText.some(text => text !== '✕' && text !== '受付終了')) {
       // Available
       await webhook.send({
-        text: 'Aeon delivery available',
+        text: 'Aeon delivery available https://shop.aeon.com/netsuper/01050000023180/checkout/cart/',
       });
       console.log('available');
     } else {
       console.log('unavailable');
     }
 
-    // await page.screenshot({ path: screenshot })
     browser.close()
   }, 5000)
 })()
